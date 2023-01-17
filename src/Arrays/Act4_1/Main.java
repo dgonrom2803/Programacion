@@ -21,7 +21,7 @@ public class Main {
     public static void m (int x) {
         x = x + 1;
     }
-    //Haz lo mismo para una variable s de tipo String. Tendrás cambiar la declaración del método para
+    //5. Haz lo mismo para una variable s de tipo String. Tendrás cambiar la declaración del método para
     // que acepte un parámetro int y otro String.
     public static void m(int x, String s){
         s = (s.toUpperCase());
