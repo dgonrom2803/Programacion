@@ -10,7 +10,7 @@ public class MainPersona {
         Persona[] personasA = {p1,p2,p3};
 
         for (Persona p: personasA){
-            System.out.println(p.toString());
+            System.out.println(p);
         }
 
     }
