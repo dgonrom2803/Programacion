@@ -12,7 +12,7 @@ public class EjemploInsercion {
             out[i] = in[i];
         }
         out[pos] = e;
-        out[pos+1] = in [];
+
 
         return out;
     }
