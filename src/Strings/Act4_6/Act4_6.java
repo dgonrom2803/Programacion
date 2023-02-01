@@ -16,7 +16,7 @@ public class Act4_6 {
         System.out.println(s3);
         imprimeLongitudCadena("Hola Diego");
         buscaCaracter("hola",3);
-        System.out.println(cuentaOcurrenciasDeUnCaracter(s,'l'));
+        System.out.println("El caracter seleccionado aparece " +cuentaOcurrenciasDeUnCaracter(s,'l') + " veces");
 
 
     }
