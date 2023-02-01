@@ -1,5 +1,7 @@
 package Strings.Act4_6;
 
+import java.util.Arrays;
+
 public class Act4_6 {
     public static void main(String[] args) {
         //Declaraciones
@@ -47,7 +49,12 @@ public class Act4_6 {
 
     // Imprime cadenas en orden alfabetico, sin tener en cuenta minus|mayus
     // m({"Corto", "Bajo", "alto"})--> alto bajo corto
-
+    public static void imprimeCadenasEnOrdenAlfabetico (String [] cadenaArray){
+        Arrays.sort(cadenaArray);
+        for (int i = 0; i < cadenaArray.length; i++) {
+            System.out.println(cadenaArray[i] + " ");
+        }
+    }
 
 
 
