@@ -1,6 +1,6 @@
-package Strings.EjemploString;
+package Strings.Act4_6;
 
-public class EjemploString {
+public class Act4_6 {
     public static void main(String[] args) {
         //Declaraciones
         String s = "Hola";
@@ -16,6 +16,7 @@ public class EjemploString {
         System.out.println(s3);
         imprimeLongitudCadena("Hola Diego");
         buscaCaracter("hola",3);
+        System.out.println(cuentaOcurrenciasDeUnCaracter(s,'l'));
 
 
     }
@@ -25,14 +26,30 @@ public class EjemploString {
     }
     //Busca caracter en posicion empezando en 1
     public static void buscaCaracter (String s, int i){
-        ;
+        if (i <= s.length() && i>=0) {
+            System.out.println("El caracter en la posición " + i + " es: " + s.charAt(i - 1));
+        } else {
+            System.out.println("No se encuentra la posición");
+        }
     }
 
     // Cuenta ocurrencias de un caracter
     // (ejemplo: m("Frana",'a')-->2
+    public static int cuentaOcurrenciasDeUnCaracter (String s, char b){
+        int cont = 0;
+        for (int i = 0; i < s.length(); i++){
+            if(s.charAt(i)==b){
+                cont++;
+            }
+        }
+        return cont;
+    }
 
     // Imprime cadenas en orden alfabetico, sin tener en cuenta minus|mayus
-    // m({"Cort", "Bajo", "alto"})--> alto bajo corto
+    // m({"Corto", "Bajo", "alto"})--> alto bajo corto
+
+
+
 
     // Un método que dado un pequeño texto devuelva un array de cadenas codificando el texto, de modo que
     // cada vez que aparezca el carácter punto (.) se corte esa frase y se meta en una posicion del array
