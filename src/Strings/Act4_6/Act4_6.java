@@ -1,5 +1,7 @@
 package Strings.Act4_6;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Arrays;
 
 public class Act4_6 {
@@ -19,6 +21,13 @@ public class Act4_6 {
         imprimeLongitudCadena("Hola Diego");
         buscaCaracter("hola",3);
         System.out.println("El caracter seleccionado aparece " +cuentaOcurrenciasDeUnCaracter(s,'l') + " veces");
+
+
+        // Convertir los siguientes números a String y posteriormente ordenarlos alfabéticamente de menor a mayor
+        int [] numbers = {2,1,11,10};
+        String [] strings;
+        strings = convierteAStringYOrdena(numbers);
+        System.out.println(Arrays.toString(strings));
 
 
     }
@@ -62,4 +71,20 @@ public class Act4_6 {
     // cada vez que aparezca el carácter punto (.) se corte esa frase y se meta en una posicion del array
     // y que todas las vocales se sustituyan por el número graficamente más parecido
     // (ejemplo: o -->0; i-->1; A-->4...)
-}
+
+
+
+    // Convertir los siguientes números a String y posteriormente ordenarlos alfabéticamente de menor a mayor
+    private static String [] convierteAStringYOrdena(int[] numbers){
+        String[] strings = new String[numbers.length];
+        // Conversion
+        for (int i = 0; i < numbers.length; i++) {
+            strings[i] = String.valueOf(numbers[i]);
+        }
+
+        // Ordenación
+        Arrays.sort(strings);
+
+            return strings;
+        }
+    }
