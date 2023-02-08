@@ -1,4 +1,4 @@
-package Tema4Prog.Arrays.Strings.Patrones;
+package Tema4Prog.Strings.Patrones;
 
 import java.util.Arrays;
 import java.util.regex.Matcher;

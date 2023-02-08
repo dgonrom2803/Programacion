@@ -1,8 +1,5 @@
 package Tema5Prog.Conjuntos;
 
-import Tema4Prog.Arrays.Act4_4.Persona;
-
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;

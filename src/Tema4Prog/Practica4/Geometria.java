@@ -1,4 +1,4 @@
-package Tema4Prog.Arrays.Practica4;
+package Tema4Prog.Practica4;
 
 public abstract class Geometria {
     protected double area;

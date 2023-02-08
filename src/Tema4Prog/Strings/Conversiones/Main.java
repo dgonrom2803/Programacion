@@ -1,4 +1,4 @@
-package Tema4Prog.Arrays.Strings.Conversiones;
+package Tema4Prog.Strings.Conversiones;
 
 public class Main {
     public static void main(String[] args) {

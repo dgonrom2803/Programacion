@@ -1,4 +1,4 @@
-package Tema4Prog.Arrays.Strings.Act4_6;
+package Tema4Prog.Strings.Act4_6;
 
 import java.util.Arrays;
 
