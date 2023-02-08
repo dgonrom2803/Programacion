@@ -9,6 +9,26 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
+        //Probar método containsAll
+        Set<Integer> numbers = new HashSet<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        System.out.println("HashSet1" + numbers);
+
+        Set<Integer> primeNumbers = new HashSet<>();
+        primeNumbers.add(2);
+        primeNumbers.add(3);
+        System.out.println("HashSet2" + primeNumbers);
+
+        boolean result = numbers.containsAll(primeNumbers);
+        System.out.println("HashSet3" + numbers);
+
+
+
+
+
         Set<String> conjunto = new HashSet<>();
         System.out.println(conjunto.isEmpty());
         String s1 = "s1";
