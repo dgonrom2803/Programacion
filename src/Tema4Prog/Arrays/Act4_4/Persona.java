@@ -7,11 +7,16 @@ public class Persona {
     public Persona(){
 
     }
+    public Persona(String nombre){
+        this.nombre = nombre;
+    }
 
     public Persona (String nombre, int edad){
         this.nombre = nombre;
         this.edad = edad;
     }
+
+
 
     public String toString (){
         String resultado = nombre + ", " + edad + " años";

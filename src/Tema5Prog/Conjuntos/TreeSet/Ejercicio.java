@@ -1,4 +1,4 @@
-package Tema5Prog.TreeSet;
+package Tema5Prog.Conjuntos.TreeSet;
 
 import java.util.Iterator;
 import java.util.Set;
@@ -22,7 +22,7 @@ public class Ejercicio {
         System.out.println("]");
 
         System.out.println("ALUMNOS");
-        Set<String> TreeSet2 = new TreeSet<>();
+        TreeSet<String> TreeSet2 = new TreeSet<>();
         TreeSet2.add("Paco");
         TreeSet2.add("Antonio");
         TreeSet2.add("Juan");
@@ -35,5 +35,19 @@ public class Ejercicio {
             System.out.print(d + " ");
         }
         System.out.println("]");
+
+        TreeSet<Persona> TreeSet3 = new TreeSet<>();
+        Persona antonio = new Persona("Antonio",35);
+        Persona juan = new Persona("Juan",25);
+        Persona paco = new Persona("Paco",18);
+        TreeSet3.add(antonio);
+        TreeSet3.add(juan);
+        TreeSet3.add(paco);
+        System.out.print("[ ");
+        for(Persona g: TreeSet3)
+        System.out.print(g + " ");
+        System.out.println("]");
+
+
     }
 }

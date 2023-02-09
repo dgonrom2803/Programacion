@@ -1,4 +1,4 @@
-package Tema5Prog.LinkedHashSet;
+package Tema5Prog.Conjuntos.LinkedHashSet;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
