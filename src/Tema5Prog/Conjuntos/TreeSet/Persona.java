@@ -1,5 +1,7 @@
 package Tema5Prog.Conjuntos.TreeSet;
 
+import java.util.Objects;
+
 public class Persona implements Comparable{
     private String nombre;
     private int edad;
@@ -42,4 +44,11 @@ public class Persona implements Comparable{
             return -1;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Persona persona = (Persona) o;
+        return Objects.equals(nombre, persona.nombre);
+    }
 }
