@@ -1,4 +1,6 @@
-package Tema5Prog.Conjuntos.TreeSet;
+package Tema5Prog.TreeSet;
+
+import Tema5Prog.ComparadorPorEdad;
 
 import java.util.Iterator;
 import java.util.Set;
@@ -47,6 +49,16 @@ public class Ejercicio {
         for(Persona g: TreeSet3)
         System.out.print(g + " ");
         System.out.println("]");
+
+
+        TreeSet<Persona> TreeSet4 = new TreeSet<>(new ComparadorPorEdad());
+        Persona berto = new Persona("Berto",36);
+        Persona pedro = new Persona("Pedro",19);
+        TreeSet4.add(berto);
+        TreeSet4.add(pedro);
+
+
+
 
 
     }

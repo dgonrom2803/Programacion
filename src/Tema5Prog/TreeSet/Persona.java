@@ -1,8 +1,8 @@
-package Tema5Prog.Conjuntos.TreeSet;
+package Tema5Prog.TreeSet;
 
 import java.util.Objects;
 
-public class Persona implements Comparable{
+public class Persona implements Comparable <Persona>{
     private String nombre;
     private int edad;
 
@@ -31,17 +31,10 @@ public class Persona implements Comparable{
         return "Persona ordenada{" + nombre + edad + "}";
     }
     @Override
-    public int compareTo(Object other) {
+    public int compareTo(Persona other) {
         Persona otherPersona = (Persona) other;
-        //return this.nombre.compareTo(otherPersona.nombre);
-        if (this.edad == otherPersona.edad){
-            return 0;
-        }
-        if(this.edad > otherPersona.edad){
-            return 1;
-        }
-        else
-            return -1;
+        return this.nombre.compareTo(otherPersona.nombre);
+
     }
 
     @Override
@@ -51,4 +44,5 @@ public class Persona implements Comparable{
         Persona persona = (Persona) o;
         return Objects.equals(nombre, persona.nombre);
     }
+
 }

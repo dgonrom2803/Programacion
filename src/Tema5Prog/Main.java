@@ -1,4 +1,4 @@
-package Tema5Prog.Conjuntos;
+package Tema5Prog;
 
 import java.util.HashSet;
 import java.util.Iterator;
