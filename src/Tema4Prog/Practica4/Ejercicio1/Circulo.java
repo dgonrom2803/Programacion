@@ -4,8 +4,11 @@ public class Circulo extends Geometria implements Coloreable{
     protected double radio;
     private String color;
 
+    Circulo(double radio, String color){}
+
     @Override
     public void colorear(String color) {
+
         this.color = color;
     }
 

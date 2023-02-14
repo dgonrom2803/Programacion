@@ -4,20 +4,25 @@ public class Cuadrado extends Geometria implements Coloreable{
     private Double lado;
     private String color;
 
-    public Cuadrado(){}
+    public Cuadrado(double lado, String color){
+        this.lado = lado;
+    }
 
     @Override
     public void colorear(String color) {
+
         this.color = color;
     }
 
     @Override
     protected double calcularArea() {
+
         return Math.pow(lado,2);
     }
 
     @Override
     protected double calcularPerimetro() {
+
         return lado * 4;
     }
 }
