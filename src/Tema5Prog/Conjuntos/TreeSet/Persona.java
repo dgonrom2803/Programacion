@@ -1,4 +1,4 @@
-package Tema5Prog.TreeSet;
+package Tema5Prog.Conjuntos.TreeSet;
 
 import java.util.Objects;
 

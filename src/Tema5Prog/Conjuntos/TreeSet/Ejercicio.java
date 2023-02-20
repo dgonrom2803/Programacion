@@ -1,6 +1,6 @@
-package Tema5Prog.TreeSet;
+package Tema5Prog.Conjuntos.TreeSet;
 
-import Tema5Prog.ComparadorPorEdad;
+import Tema5Prog.Conjuntos.ComparadorPorEdad;
 
 import java.util.Iterator;
 import java.util.Set;
