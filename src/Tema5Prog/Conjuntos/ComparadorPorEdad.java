@@ -1,6 +1,6 @@
 package Tema5Prog.Conjuntos;
 
-import Tema5Prog.Conjuntos.TreeSet.Persona;
+import Tema5Prog.Conjuntos.Act5_1.Persona;
 
 import java.util.Comparator;
 

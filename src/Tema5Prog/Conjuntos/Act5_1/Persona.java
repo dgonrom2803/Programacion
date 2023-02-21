@@ -1,4 +1,4 @@
-package Tema5Prog.Conjuntos.TreeSet;
+package Tema5Prog.Conjuntos.Act5_1;
 
 import java.util.Objects;
 
@@ -10,6 +10,7 @@ public class Persona implements Comparable <Persona>{
         this.nombre = nombre;
         this.edad = edad;
     }
+
 
     public String getNombre(){
         return nombre;
@@ -28,7 +29,7 @@ public class Persona implements Comparable <Persona>{
     }
     @Override
     public String toString(){
-        return "Persona ordenada{" + nombre + edad + "}";
+        return "Persona ordenada { " + nombre +" "+ edad + " }";
     }
     @Override
     public int compareTo(Persona other) {
