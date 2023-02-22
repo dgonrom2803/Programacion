@@ -11,6 +11,10 @@ public class Persona implements Comparable <Persona>{
         this.edad = edad;
     }
 
+    public Persona() {
+
+    }
+
 
     public String getNombre(){
         return nombre;
