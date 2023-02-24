@@ -20,6 +20,7 @@ public class TaskList {
     }
     static void getTasks(List list){
         Object[] arreglo = list.toArray();
+        System.out.println(arreglo);
         System.out.println(Arrays.toString(arreglo));
     }
 }
