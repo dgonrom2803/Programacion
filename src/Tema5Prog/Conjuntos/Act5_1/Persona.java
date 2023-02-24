@@ -33,12 +33,12 @@ public class Persona implements Comparable <Persona>{
     }
     @Override
     public String toString(){
-        return "Persona ordenada { " + nombre +" "+ edad + " }";
+        return "{ " + nombre +" "+ edad + " }";
     }
     @Override
     public int compareTo(Persona other) {
         Persona otherPersona = (Persona) other;
-        return this.nombre.compareTo(otherPersona.nombre);
+        return this.nombre.compareToIgnoreCase(otherPersona.nombre);
 
     }
 
