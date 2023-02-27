@@ -13,4 +13,13 @@ public class Sede {
         this.departamento2 = departamento2;
         this.departamento3 = departamento3;
     }
+    @Override
+    public String toString() {
+        return "Sede{" +
+                "Localización = " + localizacion +
+                ", Departamento 1 = " + departamento1 +
+                ", Departamento 2 = " + departamento2 +
+                ", Departamento 3 = " + departamento3 +
+                '}';
+    }
 }

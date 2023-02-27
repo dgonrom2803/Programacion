@@ -22,4 +22,17 @@ public class Empleado {
         this.reduccionJornada = reduccionJornada;
         this.departamento = departamento;
     }
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "Codigo del empleado = " + codigoEmpleado +
+                ", DNI = " + DNI +
+                ", nombre = " + nombre +
+                ", Primer Apellido = " + primerApellido +
+                ", Segundo Apellido = " + segundoApellido +
+                ", Año de Nacimiento = " + annoNacimiento +
+                ", Reducción de jornada = " + reduccionJornada +
+                ", Departamento = " + departamento +
+                '}';
+    }
 }
