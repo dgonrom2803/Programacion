@@ -1,9 +1,17 @@
 package Tema5Prog.Listas.Act5_2;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class TaskList {
+    private List<String> tareas;
+
+    public TaskList(String type) {
+        tareas = new ArrayList<>();
+    }
+
     static void addTask(List list, String task){
         list.add(task);
     }
