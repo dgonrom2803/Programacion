@@ -8,7 +8,7 @@ public class Main extends TaskList {
     public static void main(String[] args) {
 
         //Creamos la lista, con las dos opciones: ArrayList o LinkedList
-        TaskList<String> tareas = new LinkedList<>();
+        List<String> tareas = new LinkedList<>();
         List<String> tareas2 = new ArrayList<>();
 
 

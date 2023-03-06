@@ -8,9 +8,7 @@ import java.util.List;
 public class TaskList {
     private List<String> tareas;
 
-    public TaskList(String type) {
-        tareas = new ArrayList<>();
-    }
+
 
     static void addTask(List list, String task){
         list.add(task);
