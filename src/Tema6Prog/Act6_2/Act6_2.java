@@ -3,6 +3,7 @@ package Tema6Prog.Act6_2;
 public class Act6_2 {
     public static void main(String[] args) {
         cuentaAtras(5);
+        System.out.println(sumaN(5));
     }
     private static void cuentaAtras (int i){
         if(i > 0) {
@@ -13,7 +14,12 @@ public class Act6_2 {
         }
     }
 
-    private static void sumaN (int i){
+    private static int sumaN (int i){
+        if (i == 1) {
+            return 1;
+        } else {
+            return i + sumaN(i-1);
+        }
 
     }
 
