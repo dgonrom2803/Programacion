@@ -36,7 +36,7 @@ public class Act6_2 {
     }
 
     private static int maxComDiv (int a, int b) {
-        if (a == 0 || b == 0){
+        if (b == 0 || a == 0){
             return a;
         } else {
             return maxComDiv(b, a % b);
