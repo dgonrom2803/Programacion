@@ -27,8 +27,7 @@ public class MochilaFraccionaria extends AlgoritmoVoraz {
 
     @Override
     protected void inicializa() {
-        Object[] solucion = new Object[n];
-        Arrays.fill();
+
     }
 
     @Override
