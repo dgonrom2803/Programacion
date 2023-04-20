@@ -13,6 +13,7 @@ public class TADCola {
         atasco.encolar(4);
         atasco.encolar(5);
         System.out.println(atasco);
+        System.out.println(atasco.resto());
 
         atasco.desencolar();
         System.out.println(atasco);
@@ -25,10 +26,12 @@ public class TADCola {
         System.out.println(atasco.esVacia());
 
         System.out.println(atasco.longitud());
+
     }
     private List cola = new LinkedList();
 
     public void encolar (Object elemento){
+
         cola.add(elemento);
     }
 

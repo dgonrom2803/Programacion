@@ -11,6 +11,7 @@ public class TADPila {
         torre.apilar(4);
         torre.apilar(33);
         System.out.println(torre);
+        System.out.println(torre.longitud());
 
         torre.apilar(46);
         System.out.println(torre);
@@ -28,7 +29,7 @@ public class TADPila {
 
     }
 
-    private List<Object> torre = new LinkedList<>();
+    private List torre = new LinkedList();
     public void apilar (Object elemento){
         torre.add(elemento);
     }
