@@ -1,4 +1,4 @@
-package Tema8Prog;
+package Tema8Prog.POJOS;
 
 public class Fabricante {
     private String nombre;

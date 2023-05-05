@@ -1,4 +1,4 @@
-package Tema8Prog.EjPOJO;
+package Tema8Prog.POJOS;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -35,5 +35,10 @@ public class Artista implements Serializable {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Artista{" +
+                "nombreArtistico='" + nombreArtistico + '\'' +
+                '}';
+    }
 }

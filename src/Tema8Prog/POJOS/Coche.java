@@ -1,7 +1,6 @@
-package Tema8Prog;
+package Tema8Prog.POJOS;
 
 import javax.persistence.*;
-import java.awt.*;
 import java.io.Serializable;
 
 @Entity(name = "Cochecito")

@@ -1,4 +1,4 @@
-package Tema8Prog.EjPOJO;
+package Tema8Prog.POJOS;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -8,7 +8,7 @@ import java.util.Date;
 public class EventoMusical implements Serializable {
     @Id
     @GeneratedValue (strategy = GenerationType.SEQUENCE, generator = "sequencia10")
-    @SequenceGenerator()
+    @SequenceGenerator(name = "")
     private Integer id;
     private String nombre;
     private Date fecha;
