@@ -10,3 +10,6 @@ nombre VARCHAR(30),
 descripcion VARCHAR(200),
 precio INT(11)
 );
+
+INSERT INTO producto VALUES (1, 'agua','mineral',4),
+ (2,'aceite','girasol',5), (3,'azucar','moreno',3)
