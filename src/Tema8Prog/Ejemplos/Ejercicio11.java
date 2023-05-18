@@ -6,7 +6,7 @@ public class Ejercicio11 {
     public static void main(String[] args) {
         String url = "jdbc:mariadb://localhost:3306/tienda";
         try {
-            Connection con = DriverManager.getConnection(url, "diego", "diego");
+            Connection con = DriverManager.getConnection(url, "root", "");
             Statement st = con.createStatement();
 
             String querySelect = "SELECT * FROM tienda.producto WHERE pais = 'Espana'";
@@ -14,8 +14,8 @@ public class Ejercicio11 {
 
             //Imprime las anteriores en un solo lote
             String queryDelete = "DELETE FROM producto";
-            String queryInsert = "INSERT INTO producto VALUES (1, 'Manzana', 'Manzanas golden', 0.50, 'Francia'), " + "(2, 'Pera', 'Peras conferencia', 0.25, 'Espana'), " + "(2, 'Uva', 'Uvas gourmet', 0.30, 'Espana')";
-            String queryUpdate = "UPDATE productos SET precio = 0.20 WHERE nombre = pera";
+            String queryInsert = "INSERT INTO producto VALUES (1, 'Manzana', 'Manzanas golden', 0.50, 'Francia'), " + "(2, 'Pera', 'Peras conferencia', 0.25, 'Espana'), " + "(3, 'Uva', 'Uvas gourmet', 0.30, 'Espana')";
+            String queryUpdate = "UPDATE producto SET precio = 0.20 WHERE producto.nombre = Pera";
 
             st.addBatch(queryDelete);
             st.addBatch(queryInsert);
@@ -38,10 +38,8 @@ public class Ejercicio11 {
             int [] numRegistrosAfectados2 = st.executeBatch();
 
 
-
-
-
-            con.commit();
+            st.close();
+            con.close();
 
 
         } catch (SQLException e){
