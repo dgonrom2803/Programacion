@@ -1,4 +1,4 @@
-package Tema8Prog.Ejercicio9;
+package Tema8Prog.Ejemplos;
 
 import java.sql.*;
 import java.util.ResourceBundle;
